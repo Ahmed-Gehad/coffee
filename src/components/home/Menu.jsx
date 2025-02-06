@@ -56,21 +56,21 @@ const Menu = () => {
                 <h1 className='font-bold text-3xl'>Our Menu</h1>
                 <div className='line bg-orange-400 h-0.5 w-16 mx-auto mt-4'></div>
             </div>
-            
-            <div className='container mx-auto grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-3 gap-10'>
-            <Slide >
-                {menus.map((menu) => (
-                    <div key={menu.id}  className='bg-[#1E1E1E] overflow-hidden p-5 rounded-lg shadow-md hover:scale-110  transition duration-300'>
-                        <img src={menu.img} alt={menu.title} className='w-60 mb-4 text-center mx-auto' />
-                        <h2 className='text-orange-400 font-bold text-2xl mb-2 '>{menu.title}</h2>
-                        <p className='text-gray-400'>{menu.desc}</p>
-                        <p className='text-orange-600 font-bold mt-4'>{menu.price}</p>
-                    </div>
 
-                ))}
-                  </Slide>
+            <div className='container mx-auto grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-3 gap-10'>
+                <Slide >
+                    {menus.map((menu) => (
+                        <div key={menu.id} className='bg-[#1E1E1E] overflow-hidden p-5 rounded-lg shadow-md hover:scale-110  transition duration-300'>
+                            <img src={menu.img} alt={menu.title} className='w-60 mb-4 text-center mx-auto' />
+                            <h2 className='text-orange-400 font-bold text-2xl mb-2 '>{menu.title}</h2>
+                            <p className='text-gray-400'>{menu.desc}</p>
+                            <p className='text-orange-600 font-bold mt-4'>{menu.price}</p>
+                        </div>
+
+                    ))}
+                </Slide>
             </div>
-          
+
         </div>
     )
 }
