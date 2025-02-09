@@ -6,7 +6,6 @@ import Testimonials from '../components/home/Testimonials'
 import Contact from '../components/home/Contact'
 
 
-
 const HomePage = () => {
   return (
     <div>
