@@ -1,5 +1,5 @@
 import {
-  FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn
+  FaFacebookF,  FaInstagram, FaLinkedinIn
 } from "react-icons/fa";
 import { MdLocationOn, MdPhone, MdEmail } from "react-icons/md";
 
@@ -76,13 +76,7 @@ const Footer = () => {
             >
               <FaFacebookF className="text-white" />
             </a>
-            <a
-              href='https://github.com/Ahmed-Gehad'
-              target="_blank"
-              className="p-2 rounded-full bg-orange-800 hover:bg-orange-400 transition duration-500"
-            >
-              <FaGithub className="text-white" />
-            </a>
+            
             <a
               target="_blank"
               href='https://www.instagram.com/ahmed.gehad.545/'
